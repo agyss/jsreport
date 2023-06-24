@@ -1,5 +1,5 @@
 {
-  "httpPort": 5488,
+  "httpPort": 80,
   "trustUserCode": true,
   "store": {
     "provider": "fs"
