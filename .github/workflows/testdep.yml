@@ -20,11 +20,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '16.16.0'
-          architecture: 'x64'
 
       - name: npm install, build, and test
         run: |
-          yarn install --production
+          yarn install --production --no-bin-links
       
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
